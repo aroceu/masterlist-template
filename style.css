@@ -129,6 +129,7 @@
 		padding: var(--size-double) 0 var(--base-size);
 		text-align: center;
 		text-transform: lowercase;
+		font-size: calc(var(--base-size) * 0.85);
 	}
 
 	.fandomButton {
