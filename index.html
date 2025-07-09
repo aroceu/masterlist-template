@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<!-- things in the code written in brackets led by an exclamation mark are code comments, and do not show up on the webpage, only in the code -->
+<!-- there are some comments like this in the code to help you out! -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<!-- this currently does not link to a real image, but you can link it to an image to show as the icon of your website in web browsers -->
+
+		<link rel="stylesheet" href="style.css" />
+		
+		<title>My Website Title</title>
+		<!-- this is the name of your website in your web browser -->
+
+	</head>
+	<body>
+		<main>
+			<div id="head">
+				<h1>My fanfiction, or your website title</h1>
+				<h2>A subtitle, navigation links, an image/banner...whatever you want!</h2>
+			</div>
+
+			<div id="blurb">
+				<!-- This is all my preview text for documentation for this page, but you can delete all of it and replace it with your own introductions or explanation of your fanfic (if you want.) It is all contained under this <div id="blurb"> tag, and closes right before the fandom navigation (see below.)-->
+
+				<p>
+					This is the preview for a very simple coding template for you to share a masterlist of your fanfiction. It is currently set up to allow visitors to filter and view fics by fandom, but you can add more options if you want.
+				</p>
+
+				<p>
+					You will need some familiarity with code to use this template effectively. I do not plan on updating it regularly, aside from making small fixes and adjustments. Anything changed after launch will be documented on <a href="https://github.com/aroceu/masterlist-template">Github</a>.
+				</p>
+
+				<p>
+					If you don't feel that comfortable yet, try
+					<a href="https://neocities.org/tutorial/html/1">a cat-guided comic introduction to HTML by Neocities (official)</a>,
+					<a href="https://webguide.neocities.org/">a beginner's webguide to HTML &amp; CSS</a>, or
+					<a href="https://internetingishard.netlify.app/">Interneting is hard (but it doesn't have to be)</a>.
+				</p>
+
+				<p>
+					This template is responsive for tablets and smartphones. The JavaScript code for the filter is from
+					<a href="https://www.w3schools.com/howto/howto_js_filter_elements.asp">w3schools</a>.
+				</p>
+
+				<p>
+					If you're interested in something <mark>similar for fanart</mark>, check out <a href="https://kayleerowena.com/blog/2025/code-template/">this template</a>, from which this webpage is inspired.
+				</p>
+
+				<!-- formatting preview begins -->
+
+				<details class="init">
+					<summary>Formatting preview</summary>
+
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+
+					<p>
+						Here's some dummy text: in <strong>bold</strong>, in <em>italics</em>, <u>underlined</u>, <mark>highlighted</mark>, <code>code</code>, and
+						<a href="">links</a>.
+					</p>
+
+					<p>
+						(Highlight)
+						<spoiler>There's also custom styling for spoilers that require the viewer to highlight the text to read it. This can be done with &lt;spoiler&gt;spoiled text&lt;/spoiler&gt;. Inner formatted text will override the spoiler styling.</spoiler>
+					</p>
+
+					<p>
+						Try out <code>&lt;p&gt;</code> to create a paragraph, and <code>&lt;/p&gt;</code> to end it.
+						<br />You can also use <code>&lt;br /&gt;</code> for line breaks.
+					</p>
+
+					<ol>
+						<li>Check out this ordered list too.</li>
+						<li>
+							Each list starts with <code>&lt;ol&gt;</code> (for ordered list), and each item starts with <code>&lt;li&gt;</code> (list item.)
+						</li>
+						<li>
+							Be sure to close your tags at the end by adding a forward slash in the code, like <code>&lt;/li&gt;</code>
+						</li>
+					</ol>
+
+					<details>
+						<summary>Click on me!!</summary>
+						<p>
+							You can hide and preview text/content with the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> tags. Read more about it
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details">here</a>.
+						</p>
+					</details>
+
+					<ul>
+						<li>You can make unordered lists (<code>&lt;ul&gt;</code>) too.</li>
+						<li>Look at me, I love bulletpoints.</li>
+					</ul>
+
+					<p>Here's some text to break up this preview better.</p>
+
+					<hr />
+
+					<p>
+						Above is a horizontal rule, which you can add by inputting <code>&lt;hr /&gt;</code>. It can act as a divider on your page.
+					</p>
+
+					<blockquote>
+						<p>This is text inside a blockquote.</p>
+						<p>Be sure to close your code!</p>
+					</blockquote>
+
+					<p>(I'm adding text here so some spacing is more distinct.)</p>
+
+					<div class="filterFic">
+						<ul>
+							<li>Fic metadata</li>
+							<li>is written as unordered list</li>
+							<li>because it is surrounded</li>
+							<li>by the filterFic div class</li>
+						</ul>
+
+						<fic-summary>
+							<p>The HTML tags for fic summary have a little bit of padding on the left and right to differentiate from metadata.</p>
+							<!-- but you don't have to use paragraph tags in the fic-summary if your summary is only one paragraph long -->
+							<p>The spacing between paragraphs within the fic summary is a little bit smaller, to keep each fic nicely condensed.</p>
+						</fic-summary>
+					</div>
+				</details>
+				<!-- end formatting preview -->
+
+				<!-- get code begins -->
+
+				<details class="init alt">
+					<summary>Get the code (click)</summary>
+
+					<ol>
+						<li>Right click on this page. Select <em>View Page Source</em>.</li>
+						<li>
+							Copy the entire page/file of what comes up. Save it in a <code>.html</code> file. This may be a local file, a file on your Neocities/Nekoweb site, or any old <code>index.html</code> (main/index page) file.
+						</li>
+						<li>
+							Go to the <a href="style.css">style.css</a> for this page and, similarly, copy/paste everything into a <code>style.css</code> file.
+						</li>
+						<li>Modify the <code>.html</code> file to your heart's content with your own text, and to display your fic instead of mine. </li>
+						<li>Manually add and order your fics under <code>&lt;div id="masterlist"&gt;</code>. Feel free to change the metadata. 
+						Adjust the button links under <code>&lt;div id="fandom-navigation"&gt;</code> to reflect your fanfiction fandoms.</li>
+						<li>
+							Modify <code>style.css</code> to reflect colors and other styles you prefer. This is not necessary if you would like your page to be styled like this preview.
+						</li>
+					</ol>
+
+					<p>You can also download the repository from <a href="https://github.com/aroceu/masterlist-template">Github</a>.</p>
+						
+					<p>For workflow ease, I recommend downloading your fic from AO3 as .html files (you can use
+						<a href="https://nianeyna.dev/ao3downloader">this script</a>) and simply uploading them as-is, linking to them through this page. Uploading the HTML file downloaded from AO3 directly to Neocities/Nekoweb/whatever will make your fic look like
+						<a href="https://aroceu.neocities.org/thats_the_way_it_is">this page</a>.
+					</p>
+
+				</details>
+				<!-- end get use code -->
+
+				<!-- customize fandom filter begins -->
+
+				<details class="init">
+					<summary>Customize fandoms and filters (click)</summary>
+
+					<p>
+						Each fic item in the list is prepended with
+						<code>&lt;div class="filterFic <strong>fandom-name</strong>"&gt;</code>, wherein
+						<code>fandom-name</code> matches
+						<code>filterSelection('<strong>fandom-name</strong>')</code> under
+						<code>fandom-navigation</code>. Each fic item <u>must</u> be closed with
+						<code>&lt;/div&gt;</code> before listing another one.
+					</p>
+
+					<p>
+						<em>To add a new fandom</em>, under
+						<code>&lt;nav id="fandom-navigation"&gt;</code>, add a new button option like so:
+						<pre>
+	&lt;button class="fandomButton" onclick="filterSelection('new-fandom')"&gt;New Fandom&lt;/button&gt;</pre>
+					</p>
+
+					<p>Be sure to use the <code>new-fandom</code> class when adding a fic for the new fandom:</p>
+
+					<pre>
+	&lt;div class="filterFic new-fandom"&gt;
+	&lt;a href=""&gt;Title&lt;/a&gt; | Character/Character | Rating | Word Count
+	&lt;fic-summary&gt;Summary of my cool fanfiction here&lt;/fic-summary&gt;
+	&lt;/div&gt;</pre>
+
+					<p>
+						Each fic can have multiple filter classes, though for simplicity purposes, this template only shows this through fics with multiple fandoms (crossovers). To add another filter to a fic item, add it to an individual fic's
+						<code>div class</code>.
+					</p>
+
+					<pre>
+	&lt;div class="filterFic new-fandom second-fandom rated-explicit"&gt;
+	&lt;a href=""&gt;Title&lt;/a&gt; | Character/Character | Rating | Word Count
+	&lt;fic-summary&gt;Summary of my cool fanfiction here&lt;/fic-summary&gt;
+	&lt;/div&gt;</pre>
+				</details>
+				<!-- end customize fandom filter -->
+
+				<h3>Additional Notes</h3>
+
+				<p>
+					I fully expect for this theme to be modified, if not at least for the text/fic, then the styling as well. The code is made so that customizations are easy to implement by mostly modifying everything under
+					<code>root:{}</code> in the stylesheet. This serves as a template for a lot of the busywork when it comes to code, but I'm not going to tell you how to organize or show off your fic&mdash;feel free to change and adjust whatever you want.
+				</p>
+
+				<p>
+					If you'd like, you can always edit more and come back to this page if you need to refer to the original code again. You can also edit the template so much that it doesn't look like this anymore and the code is barely recognizable as mine. Do whatever you want and remove the credits at your own whims. I trust your judgment on this more than you need mine.
+				</p>
+
+				<p>
+					Also, be sure to check out the <a href="https://ficring.neocities.org/">fic ring</a> when you're done setting up. I don't run it, I'm just making a suggestion :)
+				</p>
+
+				<p>I do run a <a href="https://fandomr.ing">fandom webring</a> though.</p>
+			</div>
+			<!-- end div id blurb -->
+
+			<!-- navigation for your fandom buttons: EDIT THESE so they make sense to YOU-->
+
+			<nav id="fandom-navigation">
+
+				<!-- don't change this one, it shows all your fic across all fandoms -->
+				<button class="fandomButton active" onclick="filterSelection('all')">All Fandoms</button>
+				
+				<!-- individual fandoms -->
+				<button class="fandomButton" onclick="filterSelection('badbuddy')">Bad Buddy</button>
+				<button class="fandomButton" onclick="filterSelection('mdzs')">Mo Dao Zu Shi</button>
+				<button class="fandomButton" onclick="filterSelection('haikyuu')">Haikyuu!!</button>
+				<button class="fandomButton" onclick="filterSelection('kurokonobasuke')">Kuroko No Basuke</button>
+				<button class="fandomButton" onclick="filterSelection('spiderverse')">Spider-verse</button>
+				<button class="fandomButton" onclick="filterSelection('jennifersbody')">Jennifer's Body</button>
+				<button class="fandomButton" onclick="filterSelection('rpf')">RPF</button>
+				<!-- new fandoms can be added with <button class="fandomButton" onclick="filterSelection('your-fandom')">Your Fandom</button>-->
+			</nav>
+			<!-- end navigation for your fandom buttons-->
+
+			<div class="masterlist">
+				<!-- where your masterlist of fic begins, BEFORE any fic items. do not get rid of this-->
+
+				<!-- each fic will look something like this, as you can see below -->
+				<div class="filterFic badbuddy">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/1951/">Fake It (till you make it)</a>
+						</li>
+						<li>Bad Buddy</li>
+						<li>Pat/Pran</li>
+						<li>Explicit</li>
+						<li>51,337</li>
+					</ul>
+					<fic-summary>
+						Pat and Pran haven’t seen each other since high school. Fifteen years later, they’ve found themselves in a little bit of a relationship situation. A fake one, at that.
+					</fic-summary>
+				</div>
+
+				<!-- you can copy and paste below as code for each fic, and/or adjust it to your own liking:
+
+	<div class="filterFic your-fandom">
+		<ul>
+			<li><a href="">Title</a></li>
+			<li>Fandom, whatever you consider second most important</li>
+			<li>Pairing, character, whatever you consider third most important</li>
+			<li>Rating, whatever you consider fourth most important</li>
+			<li>Word count, whatever you consider fifth most important</li>
+		</ul>
+		<fic-summary>Summary here. You can use <p> tags if your summaries are multi-paragraphed; the spacing will look consistent even when using paragraph tags in the fic summary.</fic-summary>
+	</div>
+	-->
+
+				<div class="filterFic badbuddy rpf">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/1952/">worst sleep i ever had (i circled you on a map)</a>
+						</li>
+						<li>Bad Buddy RPF</li>
+						<li>Ohm/Nanon</li>
+						<li>Explicit</li>
+						<li>1,071</li>
+					</ul>
+					<fic-summary>
+						Ohm and Nanon, after.
+						<br />#GMMTVStarlympics24
+					</fic-summary>
+				</div>
+
+				<div class="filterFic badbuddy">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/1722/">how to be sweet again</a>
+						</li>
+						<li>Bad Buddy</li>
+						<li>Pat/Pran</li>
+						<li>Mature</li>
+						<li>7,972</li>
+					</ul>
+					<fic-summary>Pran flies out to Singapore, and Pat misses him. Terribly.</fic-summary>
+				</div>
+
+				<div class="filterFic badbuddy">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/1682/">getting used to being held by you</a>
+						</li>
+						<li>Bad Buddy</li>
+						<li>Pat/Pran</li>
+						<li>Teen</li>
+						<li>1,483</li>
+					</ul>
+					<fic-summary>
+						<p>Pat's door was locked. Pran expected as much, but it still stung.</p>
+						<p>And maybe Pran was too drunk to know when to give up.</p>
+					</fic-summary>
+				</div>
+
+				<div class="filterFic spiderverse">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/1667/">like father, like daughter</a>
+						</li>
+						<li>Spider-verse</li>
+						<li>Miguel &amp; Gwen</li>
+						<li>Teen</li>
+						<li>957</li>
+					</ul>
+					<fic-summary>
+						She is a kid, a blonde teenage girl, a baby face and freckled cheeks. She’d be Gabriella’s age, maybe a bit younger now. Or older. It’s hard to know how many years have passed since Miguel went back. [A shortfic of Gwen’s initial confrontation with her father, from Miguel’s POV]
+					</fic-summary>
+				</div>
+
+				<div class="filterFic jennifersbody">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/115/">a girl like you should wear a warning</a>
+						</li>
+						<li>Jennifer's Body</li>
+						<li>Jennifer/Needy</li>
+						<li>Mature</li>
+						<li>7,531</li>
+					</ul>
+					<fic-summary>
+						<p>“What was that for?” Needy asks, as Jennifer closes her phone with a smug grin. “Those guys almost sacrificed you to Satan!”</p>
+						<p>“Yeah, but you sacrificed me to Satan instead,” Jennifer replies.</p>
+					</fic-summary>
+				</div>
+
+				<div class="filterFic mdzs">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/68/">get wild</a>
+						</li>
+						<li>Mo Dao Zu Shi</li>
+						<li>Lan Wangji/Wei Wuxian</li>
+						<li>Explicit</li>
+						<li>23,925</li>
+					</ul>
+					<fic-summary>
+						Wei Ying didn’t expect to enter a weird… something-with-benefits-plus-power-play with the captain of the Gusu basketball team. He’s not sure if it’s worth it.
+					</fic-summary>
+				</div>
+
+				<div class="filterFic mdzs">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/70/">So Sing To Me All Night</a>
+						</li>
+						<li>Mo Dao Zu Shi</li>
+						<li>Lan Wangji/Wei Wuxian</li>
+						<li>Teen</li>
+						<li>10,591w</li>
+					</ul>
+					<fic-summary>
+						Wei Ying can’t remember giving a shit about his old college’s student radio before he dropped out, but it’s eleven at night and he has nothing else better to do. He clicks on the button that says <strong><em>Listen Here!</em></strong> and waits to be impressed.
+					</fic-summary>
+				</div>
+
+				<div class="filterFic mdzs">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/74/">Honey, Please Come Through</a>
+						</li>
+						<li>Mo Dao Zu Shi</li>
+						<li>Lan Wangji/Wei Wuxian</li>
+						<li>Explicit</li>
+						<li>5,476</li>
+					</ul>
+					<fic-summary>
+						<p>
+							Following an agreement to allow Wei Wuxian to take his virginity, Lan Wangji returns to Yiling and discovers that Wei Wuxian is dead. Not one to rescind such promises, Lan Wangji finds another way to keep his end of it.
+						</p>
+						<p>–</p>
+						<p>Or, a Dionysus &amp; Prosymnus AU.</p>
+					</fic-summary>
+				</div>
+
+				<div class="filterFic kurokonobasuke">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/387/">scared of almost nothing at all</a>
+						</li>
+						<li>Kuroko No Basuke</li>
+						<li>Kagami/Kise</li>
+						<li>Mature</li>
+						<li>3,461</li>
+					</ul>
+					<fic-summary>
+						He thinks about the inevitable, the tragic fate, hovering over Kagami, the strain of his muscles when he drives a stake into another vampire.
+					</fic-summary>
+				</div>
+
+				<div class="filterFic haikyuu">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/570/">Solstice</a>
+						</li>
+						<li>Haikyuu!!</li>
+						<li>Asahi/Daichi/Suga</li>
+						<li>Teen</li>
+						<li>27,150</li>
+					</ul>
+					<fic-summary>
+						They learn to fall into step. Asahi likes the warmth that they bring.
+					</fic-summary>
+				</div>
+
+				<div class="filterFic haikyuu">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/578/">Glow</a>
+						</li>
+						<li>Haikyuu!!</li>
+						<li>Daichi/Suga</li>
+						<li>Explicit</li>
+						<li>1,726</li>
+					</ul>
+					<fic-summary>
+						Daichi spanks Suga until he cries. Suga loves it.
+					</fic-summary>
+				</div>
+
+				<div class="filterFic haikyuu">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/582/">Hit Wonder</a>
+						</li>
+						<li>Haikyuu!!</li>
+						<li>Oikawa/Hinata</li>
+						<li>Teen</li>
+						<li>3,577</li>
+					</ul>
+					<fic-summary>
+						In a lot of circumstances, Tooru would think that he was better at this, encountering people who admired him. Shorty – Hinata – would never cease to surprise him.
+					</fic-summary>
+				</div>
+
+				<div class="filterFic kurokonobasuke haikyuu">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/534/">take my breath (never let it go)</a>
+						</li>
+						<li>Kuroko No Basuke, Haikyuu!! (Crossover)</li>
+						<li>Yachi/Momoi</li>
+						<li>Teen</li>
+						<li>810</li>
+					</ul>
+					<fic-summary>
+						Yachi meets Momoi Satsuki in her first year of university.
+					</fic-summary>
+				</div>
+
+				<div class="filterFic kurokonobasuke">
+					<ul>
+						<li>
+							<a href="https://aroceu.com/fic/385/">f'd in the b(asketball)</a>
+						</li>
+						<li>Kuroko No Basuke</li>
+						<li>Kagami/Kuroko, Kuroko/genmira</li>
+						<li>Teen</li>
+						<li>1,478</li>
+					</ul>
+					<fic-summary>
+						To date Kuroko (in peace), Kagami defeats his five evil exes.
+					</fic-summary>
+				</div>
+			</div>
+			<!-- end masterlist -->
+
+			<div id="footer">
+				<!-- footer start -->
+
+				<p>
+					&copy; 2025 your username <br /><a href="">Bsky</a> | <a href="">Tumblr</a> | <a href="">Ko-fi</a> | Socials et al <br />Or do whatever you want with the footer
+				</p>
+
+				<p>
+					Template base by <a href="https://kingdra.net">kingdra.net</a> &hearts;
+				</p>
+				<!-- I'd appreciate it if you kept the credits here so other people can find it instead of stealing your code. But you don't have to, I can't tell you what to do -->
+			</div>
+			<!-- end footer -->
+		</main>
+		<!-- end all main content -->
+
+		<!-- below this is what makes the filter script work! don't touch it! -->
+
+		<script type="text/javascript">
+			filterSelection("all");
+			function filterSelection(c) {
+				var x, i;
+				x = document.getElementsByClassName("filterFic");
+				if (c == "all") c = "";
+				for (i = 0; i < x.length; i++) {
+					w3RemoveClass(x[i], "show");
+					if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+				}
+			}
+
+			function w3AddClass(element, name) {
+				var i, arr1, arr2;
+				arr1 = element.className.split(" ");
+				arr2 = name.split(" ");
+				for (i = 0; i < arr2.length; i++) {
+					if (arr1.indexOf(arr2[i]) == -1) {
+						element.className += " " + arr2[i];
+					}
+				}
+			}
+
+			function w3RemoveClass(element, name) {
+				var i, arr1, arr2;
+				arr1 = element.className.split(" ");
+				arr2 = name.split(" ");
+				for (i = 0; i < arr2.length; i++) {
+					while (arr1.indexOf(arr2[i]) > -1) {
+						arr1.splice(arr1.indexOf(arr2[i]), 1);
+					}
+				}
+				element.className = arr1.join(" ");
+			}
+
+			// Add active class to the current button (highlight it)
+			var fandomButtonmasterlist = document.getElementById("fandom-navigation");
+			var fandomButtons = fandomButtonmasterlist.getElementsByClassName("fandomButton");
+			for (var i = 0; i < fandomButtons.length; i++) {
+				fandomButtons[i].addEventListener("click", function () {
+					var current = document.getElementsByClassName("active");
+					current[0].className = current[0].className.replace(" active", "");
+					this.className += " active";
+				});
+			}
+		</script>
+	</body>
+</html>
