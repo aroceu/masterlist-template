@@ -133,6 +133,7 @@
 		margin: var(--size-quarter) var(--size-quarter) var(--size-quarter) 0;
 		font-size: var(--base-size);
 		color: var(--text);
+		font-family: var(--main-font);
 	}
 
 	.fandomButton:hover {
