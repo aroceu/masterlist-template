@@ -20,7 +20,7 @@
 
 		--fic-metadata-divider: " // "; /** change this to your liking **/
 
-		/** these can be changed to solid, dotted, dashed, double, wavy, and none. it also works with border-size in some cases **/
+		/** these can be changed to solid, dotted, dashed, double, wavy, and none. it also works with border-size in some cases. wavy does not work with every element, but it does as a text-decoration **/
 		--border-style-main: solid;
 		--border-style-accent: dotted;
 
@@ -189,6 +189,7 @@
 
 	h3 {
 		font-size: var(--size-one-half);
+		font-family: var(--h3-font);
 		color: var(--accent-dark);
 		margin: var(--base-size) 0 var(--size-half);
 	}
