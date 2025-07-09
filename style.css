@@ -20,9 +20,10 @@
 
 		--fic-metadata-divider: " // "; /** change this to your liking **/
 
-		/** these can be changed to solid, dotted, dashed, double, wavy, and none. it also works with border-size in some cases. wavy does not work with every element, but it does as a text-decoration **/
+		/** these can be changed to solid, dotted, dashed, double, and none. it combines with border-size in some cases **/
 		--border-style-main: solid;
-		--border-style-accent: dotted;
+		--border-style-accent: dotted; /** links only, also can be wavy **/
+		--hr-style: dotted;
 
 		/** some sizing, which you can change but I highly advise for you to keep the provided units (em, %, and px respectively). smaller than 1 can be used as decimals, e.g. 0.8 **/
 		--base-size: 1em;
@@ -246,7 +247,7 @@
 
 	hr {
 		border-top: none;
-		border-bottom: var(--border-size) var(--border-style-accent) var(--accent);
+		border-bottom: var(--border-size) var(--hr-style) var(--accent);
 		margin: var(--size-one-half) 0;
 	}
 
