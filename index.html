@@ -5,17 +5,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="initial-scale=1.0" />
-		<link rel="icon" type="image/png" href="favicon.png" />
-		<!-- this currently does not link to a real image, but you can link it to an image to show as the icon of your website in web browsers -->
 
-		<link rel="stylesheet" href="style.css" />
+		<!-- the code below does not link to a real image, but you can link it to an image to show as the icon of your website in web browsers -->
+		<link rel="icon" type="image/png" href="favicon.png" />
+
 		<!-- this links to and reads the stylesheet rules -->
+		<link rel="stylesheet" href="style.css" />
 		
-		<title>My Website Title</title>
 		<!-- this is the name of your website in your web browser -->
+		<title>My Website Title</title>
 
 	</head>
 	<body>
+
+		<totop><a href="#">to top?</a></totop> <!-- others: &uArr; &uarr; ^ -->
+
 		<main>
 			<div id="head">
 				<h1>My fanfiction, or your website title</h1>
@@ -30,7 +34,7 @@
 				</p>
 
 				<p>
-					You will need some familiarity with code to use this template effectively. I do not plan on updating it regularly, aside from making small fixes and adjustments. Anything changed after launch will be documented on <a href="https://github.com/aroceu/masterlist-template">Github</a>.
+					You will need some familiarity with code to use this template effectively. I do not plan on updating it regularly, aside from making small fixes and adjustments. Anything changed after launch (8 July 2025) will be documented on <a href="https://github.com/aroceu/masterlist-template">Github</a>.
 				</p>
 
 				<p>
@@ -46,7 +50,7 @@
 				</p>
 
 				<p>
-					If you're interested in something <mark>similar for fanart</mark>, check out <a href="https://kayleerowena.com/blog/2025/code-template/">this template</a>, from which this webpage is inspired.
+					<mark>If you're interested in something similar for fanart</mark>, check out <a href="https://kayleerowena.com/blog/2025/code-template/">this template</a>, from which this webpage is inspired.
 				</p>
 
 				<!-- formatting preview begins -->
@@ -166,11 +170,11 @@
 					<summary>Customize fandoms and filters (click)</summary>
 
 					<p>
-						Each fic item in the list is prepended with
+						The code for each individual fic is prepended with
 						<code>&lt;div class="filterFic <strong>fandom-name</strong>"&gt;</code>, wherein
-						<code>fandom-name</code> matches
-						<code>filterSelection('<strong>fandom-name</strong>')</code> under
-						<code>fandom-navigation</code>. Each fic item <u>must</u> be closed with
+						<code>fandom-name</code> is the fandom that the fic is for, <u>and</u> matches at least 
+						one fandom filter option under <code>fandom-navigation</code> a la 
+						<code>filterSelection('<strong>fandom-name</strong>')</code>. Each fic item <u>must</u> be closed with
 						<code>&lt;/div&gt;</code> before listing another one.
 					</p>
 
@@ -185,8 +189,14 @@
 
 					<pre>
 	&lt;div class="filterFic <strong>new-fandom</strong>"&gt;
-	&lt;a href=""&gt;Title&lt;/a&gt; | Character/Character | Rating | Word Count
-	&lt;fic-summary&gt;Summary of my cool fanfiction here&lt;/fic-summary&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=""&gt;Title&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;Fandom&lt;/li&gt;
+			&lt;li&gt;Pairing&lt;/li&gt;
+			&lt;li&gt;Rating&lt;/li&gt;
+			&lt;li&gt;Word count&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;fic-summary&gt;Summary of my awesome fanfiction.&lt;/fic-summary&gt;
 	&lt;/div&gt;</pre>
 
 					<p>
@@ -196,8 +206,14 @@
 
 					<pre>
 	&lt;div class="filterFic <strong>new-fandom</strong> <u>second-fandom</u> <em>rated-explicit</em>"&gt;
-	&lt;a href=""&gt;Title&lt;/a&gt; | Character/Character | Rating | Word Count
-	&lt;fic-summary&gt;Summary of my cool fanfiction here&lt;/fic-summary&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href=""&gt;Title&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;Fandom&lt;/li&gt;
+			&lt;li&gt;Pairing&lt;/li&gt;
+			&lt;li&gt;Rating&lt;/li&gt;
+			&lt;li&gt;Word count&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;fic-summary&gt;Summary of my awesome fanfiction.&lt;/fic-summary&gt;
 	&lt;/div&gt;</pre>
 				</details>
 				<!-- end customize fandom filter -->

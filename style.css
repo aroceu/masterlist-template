@@ -1,10 +1,8 @@
 	:root {
 		/** you can change all this to fit your own styles without having to touch the rest of the code! **/
 
-		/** you can change these background colors, or make them images with url('IMAGE URL'); instead. ex. --body-background: url('https://i.imgur.com/0tkFvFi.png'); if your background image is not intended to repeat, be sure to add no-repeat after the image url and before the semicolon. images will repeat by default **/
 		--body-background: #fff;
 		--main-background: #fff;
-
 		--text: #333;
 		--accent: #16a9b8;
 		--accent-dark: #1a7882;
@@ -21,14 +19,14 @@
 		--fic-metadata-divider: " // "; /** change this to your liking **/
 
 		/** these can be changed to solid, dotted, dashed, double, and none. it combines with border-size in some cases **/
-		--border-style-main: solid;
-		--border-style-accent: dotted; /** links only, also can be wavy **/
+		--main-border-style: solid;
+		--link-border-style: dotted; /** links only, also can be wavy **/
 		--hr-style: dotted;
 
 		/** some sizing, which you can change but I highly advise for you to keep the provided units (em, %, and px respectively). smaller than 1 can be used as decimals, e.g. 0.8 **/
 		--base-size: 1em;
 		--line-height: 150%;
-		--main-width: 50em;
+		--main-width: 60em;
 		--border-size: 2px;
 
 		/** calculations for sizing, you might not want to touch these **/
@@ -41,6 +39,7 @@
 	* {
 		padding: 0;
 		margin: 0;
+		box-sizing: border-box;
 		-webkit-text-size-adjust: none;
 	}
 
@@ -64,6 +63,13 @@
 		font: normal var(--base-size) / var(--line-height) var(--main-font);
 	}
 
+	totop{
+		display: block;
+		position: fixed;
+		bottom: var(--base-size);
+		right: var(--base-size);
+	}
+
 	main {
 		background: var(--main-background);
 		width: var(--main-width);
@@ -74,13 +80,13 @@
 	#head {
 		margin: 0 auto;
 		padding: var(--size-one-half) 0;
-		border-bottom: var(--border-size) var(--border-style-main) var(--accent);
+		border-bottom: var(--border-size) var(--main-border-style) var(--accent);
 		text-align: center;
 	}
 
 	#blurb {
 		padding: var(--size-double) 0;
-		border-bottom: var(--border-size) var(--border-style-main) var(--accent);
+		border-bottom: var(--border-size) var(--main-border-style) var(--accent);
 	}
 
 	.filterFic {
@@ -118,7 +124,7 @@
 	}
 
 	#footer {
-		border-top: var(--border-size) var(--border-style-main)  var(--accent);
+		border-top: var(--border-size) var(--main-border-style)  var(--accent);
 		margin: var(--base-size) 0 0;
 		padding: var(--size-double) 0 var(--base-size);
 		text-align: center;
@@ -221,18 +227,25 @@
 	a:link,
 	a:visited {
 		color: var(--accent);
-		text-decoration: underline var(--border-style-accent);
+		-webkit-text-decoration-line: var(--link-border-style);
+		text-decoration: underline;
+		text-decoration-style: var(--link-border-style);
 		text-decoration-thickness: var(--border-size);
 		text-decoration-color: var(--accent);
+		-webkit-text-decoration-color: var(--accent);
 	}
 
 	a:hover,
 	a:active,
 	a:focus {
 		color: var(--accent-dark);
-		text-decoration: underline var(--border-style-main);
+		-webkit-text-decoration-line: var(--link-border-style);
+		text-decoration: underline;
+		text-decoration-style: var(--main-border-style);
 		text-decoration-thickness: var(--border-size);
 		text-decoration-color: var(--accent-dark);
+		-webkit-text-decoration-color: var(--accent-dark);
+		box-shadow: inset 0px -15px 0 0px var(--accent-light);
 	}
 
 	summary:hover, details[open] > summary{
@@ -254,7 +267,7 @@
 	blockquote {
 		margin: var(--base-size) 0;
 		padding: var(--size-half) var(--size-one-half);
-		border-left: var(--size-half) var(--border-style-main) var(--accent);
+		border-left: var(--size-half) var(--main-border-style) var(--accent);
 	}
 
 	spoiler {
@@ -262,8 +275,12 @@
 		color: var(--text)!important;
 	}
 
-	spoiler::selection,
-	spoiler::-moz-selection {
+	spoiler::selection {
+		color: var(--text);
+		background: var(--main-background);
+	}
+
+	spoiler::-moz-selection{
 		color: var(--text);
 		background: var(--main-background);
 	}
