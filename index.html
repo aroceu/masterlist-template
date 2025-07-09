@@ -177,13 +177,13 @@
 						<em>To add a new fandom</em>, under
 						<code>&lt;nav id="fandom-navigation"&gt;</code>, add a new button option like so:
 						<pre>
-	&lt;button class="fandomButton" onclick="filterSelection('new-fandom')"&gt;New Fandom&lt;/button&gt;</pre>
+	&lt;button class="fandomButton" onclick="filterSelection('<strong>new-fandom</strong>')"&gt;<strong>New Fandom</strong>&lt;/button&gt;</pre>
 					</p>
 
-					<p>Be sure to use the <code>new-fandom</code> class when adding a fic for the new fandom:</p>
+					<p>Be sure to use the <code><strong>new-fandom</strong></code> class when adding a fic for the new fandom:</p>
 
 					<pre>
-	&lt;div class="filterFic new-fandom"&gt;
+	&lt;div class="filterFic <strong>new-fandom</strong>"&gt;
 	&lt;a href=""&gt;Title&lt;/a&gt; | Character/Character | Rating | Word Count
 	&lt;fic-summary&gt;Summary of my cool fanfiction here&lt;/fic-summary&gt;
 	&lt;/div&gt;</pre>
@@ -194,7 +194,7 @@
 					</p>
 
 					<pre>
-	&lt;div class="filterFic new-fandom second-fandom rated-explicit"&gt;
+	&lt;div class="filterFic <strong>new-fandom</strong> <u>second-fandom</u> <em>rated-explicit</em>"&gt;
 	&lt;a href=""&gt;Title&lt;/a&gt; | Character/Character | Rating | Word Count
 	&lt;fic-summary&gt;Summary of my cool fanfiction here&lt;/fic-summary&gt;
 	&lt;/div&gt;</pre>
