@@ -20,6 +20,10 @@
 
 		--fic-metadata-divider: " // "; /** change this to your liking **/
 
+		/** these can be changed to solid, dotted, dashed, double, wavy, and none. it also works with border-size in some cases **/
+		--border-style-main: solid;
+		--border-style-accent: dotted;
+
 		/** some sizing, which you can change but I highly advise for you to keep the provided units (em, %, and px respectively). smaller than 1 can be used as decimals, e.g. 0.8 **/
 		--base-size: 1em;
 		--line-height: 150%;
@@ -69,13 +73,13 @@
 	#head {
 		margin: 0 auto;
 		padding: var(--size-one-half) 0;
-		border-bottom: var(--border-size) solid var(--accent);
+		border-bottom: var(--border-size) var(--border-style-main) var(--accent);
 		text-align: center;
 	}
 
 	#blurb {
 		padding: var(--size-double) 0;
-		border-bottom: var(--border-size) solid var(--accent);
+		border-bottom: var(--border-size) var(--border-style-main) var(--accent);
 	}
 
 	.filterFic {
@@ -113,7 +117,7 @@
 	}
 
 	#footer {
-		border-top: var(--border-size) solid var(--accent);
+		border-top: var(--border-size) var(--border-style-main)  var(--accent);
 		margin: var(--base-size) 0 0;
 		padding: var(--size-double) 0 var(--base-size);
 		text-align: center;
@@ -214,7 +218,7 @@
 	a:link,
 	a:visited {
 		color: var(--accent);
-		text-decoration: underline dotted;
+		text-decoration: underline var(--border-style-accent);
 		text-decoration-thickness: var(--border-size);
 		text-decoration-color: var(--accent);
 	}
@@ -223,7 +227,7 @@
 	a:active,
 	a:focus {
 		color: var(--accent-dark);
-		text-decoration: underline solid;
+		text-decoration: underline var(--border-style-main);
 		text-decoration-thickness: var(--border-size);
 		text-decoration-color: var(--accent-dark);
 	}
@@ -240,14 +244,14 @@
 
 	hr {
 		border-top: none;
-		border-bottom: var(--border-size) dotted var(--accent);
+		border-bottom: var(--border-size) var(--border-style-accent) var(--accent);
 		margin: var(--size-one-half) 0;
 	}
 
 	blockquote {
 		margin: var(--base-size) 0;
 		padding: var(--size-half) var(--size-one-half);
-		border-left: var(--size-half) solid var(--accent);
+		border-left: var(--size-half) var(--border-style-main) var(--accent);
 	}
 
 	spoiler {
