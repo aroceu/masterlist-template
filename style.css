@@ -186,7 +186,7 @@
 	h3 {
 		font-size: var(--size-one-half);
 		color: var(--accent-dark);
-		margin: var(--size-half) 0;
+		margin: var(--base-size) 0 var(--size-half);
 	}
 
 	h4 {
@@ -259,6 +259,10 @@
 	spoiler::-moz-selection {
 		color: var(--text);
 		background: var(--main-background);
+	}
+
+	img{
+		max-width: 100%;;
 	}
 
 	@media (max-width: 900px) {
