@@ -129,7 +129,7 @@
 	#footer {
 		border-top: var(--border-size) var(--main-border-style)  var(--accent);
 		margin: var(--base-size) 0 0;
-		padding: var(--size-double) 0 var(--base-size);
+		padding: var(--size-double) 0 0);
 		text-align: center;
 		text-transform: lowercase;
 		font-size: calc(var(--base-size) * 0.85);
