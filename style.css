@@ -66,8 +66,11 @@
 	totop{
 		display: block;
 		position: fixed;
-		bottom: var(--base-size);
-		right: var(--base-size);
+		bottom: 0;
+		right: 0;
+		background: var(--main-background);
+		padding: var(--base-size);
+		border-top-left-radius: 30px;
 	}
 
 	main {
@@ -325,6 +328,10 @@
 		.filterFic {
 			margin: 10px 0;
 			padding: 0 0.2em;
+		}
+
+		totop{
+			display: none; /** hides to top link on mobile, but you can comment or delete this to keep it visible **/
 		}
 	}
 
