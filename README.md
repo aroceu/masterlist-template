@@ -1,11 +1,11 @@
 # A fanfiction masterlist template
 For fanfic writers to list their stories on a raw HTML/CSS webpage.
 
-To preview, and for further documentation, see the webpage live at https://kingdra.net/masterlist-template
+To preview, and for further documentation, see the webpage live at https://kingdra.net/fan/masterlist
 
 ## How to update
 
-If you're new to Github/don't know how to check updates, take a peek at the [commits](https://github.com/aroceu/masterlist-template/commits/main/) and see what specifically was changed with each update (commit). 
+If you're new to Github or don't know how to check updates, take a peek at the [commits](https://github.com/aroceu/masterlist-template/commits/main/) and see what specifically was changed with each update (commit). 
 
 If you've already downloaded/customized your own webpage before any more recent commits (though this is unlikely), instead of downloading my files again and resetting your own changes, you can look at the details of each commit and manually make the same modifications I made to your own, if you want. 
 

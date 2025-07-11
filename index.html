@@ -6,8 +6,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="initial-scale=1.0" />
 
-		<!-- the code below does not link to a real image, but you can link it to an image to show as the icon of your website in web browsers -->
-		<link rel="icon" type="image/png" href="favicon.png" />
+		<!-- the code below links to my own image, but you can link it to an image to show as the icon of your website in web browsers -->
+		<link rel="icon" type="image/png" href="../favicon.png" />
 
 		<!-- this links to and reads the stylesheet rules -->
 		<link rel="stylesheet" href="style.css" />
@@ -49,8 +49,10 @@
 					<a href="https://www.w3schools.com/howto/howto_js_filter_elements.asp">w3schools</a>.
 				</p>
 
+				<p>My index of other fannish webpage templates can be found <a href="../">here</a>. </p>
+
 				<p>
-					<mark>If you're interested in something similar for fanart</mark>, check out <a href="https://kayleerowena.com/blog/2025/code-template/">this template</a>, from which this webpage is inspired.
+					If you're interested in something similar for <mark>fanart</mark>, check out <a href="https://kayleerowena.com/blog/2025/code-template/">this template</a>, from which this webpage is inspired.
 				</p>
 
 				<!-- formatting preview begins -->
@@ -147,7 +149,7 @@
 							Go to the <a href="style.css">style.css</a> for this page and, similarly, copy/paste everything into a <code>style.css</code> file.
 						</li>
 						<li>Modify the <code>.html</code> file to your heart's content with your own text, and to display your fic instead of mine. </li>
-						<li>Manually add and order your fics under <code>&lt;div id="masterlist"&gt;</code>. Feel free to change the metadata. 
+						<li>Manually add and order your fics under <code>&lt;div id="masterlist"&gt;</code>. Feel free to change the metadata order. 
 						Adjust the button links under <code>&lt;div id="fandom-navigation"&gt;</code> to reflect your fanfiction fandoms.</li>
 						<li>
 							Modify <code>style.css</code> to reflect colors and other styles you prefer. This is not necessary if you would like your page to be styled like this preview.
@@ -160,6 +162,8 @@
 						<a href="https://nianeyna.dev/ao3downloader">this script</a>) and simply uploading them as-is, linking to them through this page. Uploading the HTML file downloaded from AO3 directly to Neocities/Nekoweb/whatever will make your fic look like
 						<a href="https://aroceu.neocities.org/thats_the_way_it_is">this page</a>.
 					</p>
+
+					<p>If you would like your fic pages to be styled and a prettier, check out <a href="../ao3css">ao3-style.css</a>.</p>
 
 				</details>
 				<!-- end get code -->
@@ -185,7 +189,7 @@
 	&lt;button class="fandomButton" onclick="filterSelection('<strong>new-fandom</strong>')"&gt;<strong>New Fandom</strong>&lt;/button&gt;</pre>
 					</p>
 
-					<p>Be sure to use the <code><strong>new-fandom</strong></code> class when adding a fic for the new fandom:</p>
+					<p>When adding a new fic for the fandom, put what you named the fandom under <code>filterSelection</code> as an additional class. In this case, I'll use <code><strong>new-fandom</strong>.</code></p>
 
 					<pre>
 	&lt;div class="filterFic <strong>new-fandom</strong>"&gt;
@@ -205,7 +209,7 @@
 					</p>
 
 					<pre>
-	&lt;div class="filterFic <strong>new-fandom</strong> <u>second-fandom</u> <em>rated-explicit</em>"&gt;
+	&lt;div class="filterFic <strong>new-fandom</strong> <u>second-fandom</u> <mark>ship-pairing</mark> <em>rated-explicit</em>"&gt;
 		&lt;ul&gt;
 			&lt;li&gt;&lt;a href=""&gt;Title&lt;/a&gt;&lt;/li&gt;
 			&lt;li&gt;Fandom&lt;/li&gt;
@@ -220,8 +224,8 @@
 
 				<!-- examples begin-->
 				<details class="init alt"><summary>Examples of alternate styling</summary>
-				
-					<p>These adjustments can be made by changing a few variables at the top of <code>style.css</code>, under <code>root:{ }</code></p>
+			
+					<p>These adjustments can be made by changing a few variables at the top of <code>style.css</code>, under <code>:root{ }</code></p>
 
 					<p><img src="https://64.media.tumblr.com/39dd3b3a12e149b9d34fe197b615235c/b036c9732e0d7606-eb/s2048x3072/7796f3fb7849f78a5f53ad62b733f83afbb8cddf.pnj"></p>
 
@@ -233,7 +237,7 @@
 
 				<p>
 					I fully expect for this theme to be modified, if not at least for the text/fic, then the styling as well. The code is made so that customizations are easy to implement by mostly modifying everything under
-					<code>root:{}</code> in the stylesheet. This serves as a template for a lot of the busywork when it comes to code, but I'm not going to tell you how to organize or show off your fic&mdash;feel free to change and adjust whatever you want.
+					<code>:root{}</code> in the stylesheet. This serves as a template for a lot of the busywork when it comes to code, but I'm not going to tell you how to organize or show off your fic&mdash;feel free to change and adjust whatever you want.
 				</p>
 
 				<p>
@@ -525,7 +529,7 @@
 				</p>
 
 				<p>
-					Template base by <a href="https://kingdra.net">kingdra.net</a> &hearts;
+					Template base by <a href="https://kingdra.net/fan/">kingdra.net</a> &hearts;
 				</p>
 				<!-- I'd appreciate it if you kept the credits here so other people can find it instead of stealing your code. But you don't have to, I can't tell you what to do -->
 			</div>

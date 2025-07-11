@@ -224,6 +224,10 @@
 		color: var(--accent);
 	}
 
+	u{
+		border-bottom: var(--border-size) var(--link-border-style) var(--accent);
+	}
+
 	mark {
 		background-color: var(--highlight-color);
 	}
