@@ -1,5 +1,4 @@
-	:root {
-		/** you can change all this to fit your own styles without having to touch the rest of the code! **/
+	:root { /** customize your style by changing the variables in these brackets **/
 
 		--body-background: #fff;
 		--main-background: #fff;

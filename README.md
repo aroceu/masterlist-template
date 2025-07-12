@@ -3,10 +3,10 @@ For fanfic writers to list their stories on a raw HTML/CSS webpage.
 
 To preview, and for further documentation, see the webpage live at https://kingdra.net/fan/masterlist
 
-## How to update
+## Additional notes
 
-If you're new to Github or don't know how to check updates, take a peek at the [commits](https://github.com/aroceu/masterlist-template/commits/main/) and see what specifically was changed with each update (commit). 
+I do not plan on upgrading this code with new features or support beyond fixing thing per bugs/reports (total: 0 so far! yay!) and copyediting. Otherwise, this template code should be functional until the heat death of the universe. 
 
-If you've already downloaded/customized your own webpage before any more recent commits (though this is unlikely), instead of downloading my files again and resetting your own changes, you can look at the details of each commit and manually make the same modifications I made to your own, if you want. 
+If, for some reason, I have made a change that upgrades the template, the change will appear in a more recent [commit](https://github.com/aroceu/masterlist-template/commits/main/) in the specific file and highlighting only the changed lines. 
 
-Fixes will NOT be frequent after initial launch, I promise. The template code should be functional until the heat death of the universe. The first 24 hours after launch are just me doing a lot of troubleshooting and being indecisive about things no one else cares about &hearts;
+You can also style your AO3 fic pages with [ao3css](https://github.com/aroceu/ao3css), which I also made :)
