@@ -9,4 +9,4 @@ I do not plan on upgrading this code with new features or support beyond fixing 
 
 If, for some reason, I have made a change that upgrades the template, the change will appear in a more recent [commit](https://github.com/aroceu/masterlist-template/commits/main/) in the specific file and highlighting only the changed lines. 
 
-You can also style your AO3 fic pages with [ao3css](https://github.com/aroceu/ao3css), which I also made :)
+You can style your AO3 fic pages with [ao3css](https://github.com/aroceu/ao3css), which I also made :)
