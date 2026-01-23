@@ -359,3 +359,6 @@
 	details.alt{
 		background: var(--accent-light);
 	}
+	summary:hover, details[open] > summary{
+		cursor: pointer;
+	}
